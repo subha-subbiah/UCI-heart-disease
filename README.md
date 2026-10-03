@@ -12,13 +12,14 @@ pip install pandas numpy scikit-learn xgboost shap matplotlib seaborn jupyter
 
 - `1_cleaning.ipynb` - Reads raw Cleveland dataset, cleans missing values, binarizes target variable, exports `heart_clean.csv`.
 - `2_preprocessing.ipynb` - Data preprocessing, feature scaling, model comparison (Logistic Regression, Random Forest, XGBoost), hyperparameter tuning, evaluation, and SHAP explainability.
+- `scaling_leakage_fixed.ipynb` - Leakage while scaling is fully removed (corrected version of 2_preprocessing.ipynb)
 - `heart_clean.csv` - Processed output from cleaning step used as input for model training.
 - `heart+disease/` - Raw dataset folder from UCI Machine Learning Repository.
 
 ## Workflow
 
 1. Run `1_cleaning.ipynb` to generate `heart_clean.csv`.
-2. Run `2_preprocessing.ipynb` to train models and evaluate metrics.
+2. Run `scaling_leakage_fixed.ipynb` to train models and evaluate metrics.
 
 ## Models & Evaluation
 
